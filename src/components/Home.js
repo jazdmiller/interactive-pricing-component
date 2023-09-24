@@ -1,4 +1,5 @@
 import React from 'react'
+import Card from './Card'
 
 
 
@@ -15,11 +16,7 @@ function Home() {
                 </div>
             </div>
         </div>
-        <div className='card w-50 mx-auto'>
-            <div className='card-body'>
-
-            </div>
-        </div>
+       <Card />
     </div>
   )
 }

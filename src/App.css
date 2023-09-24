@@ -50,11 +50,22 @@ html, body{
   color:#293356;
 }
 
+.billing-row{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  
+}
+
 /* ****** MEDIA QUERIES ******** */
 
 @media screen and (min-width: 375px){
   .bold-header{
     font-size: 1.3em
+  }
+
+  .card{
+    width: 90%;
+    color: #848EAD;
   }
 }
 
