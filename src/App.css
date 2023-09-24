@@ -18,4 +18,21 @@ html, body{
   background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
+    position: relative;
 }
+
+.bg-img img{
+  height: 30%;
+}
+
+.bg-pattern{
+  min-height: 40%;
+  background-image: url('./images/pattern-circles.svg');
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+
+
