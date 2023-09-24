@@ -56,6 +56,11 @@ html, body{
   
 }
 
+.card{
+  color: #848EAD;
+}
+
+
 /* ****** MEDIA QUERIES ******** */
 
 @media screen and (min-width: 375px){
@@ -65,13 +70,16 @@ html, body{
 
   .card{
     width: 90%;
-    color: #848EAD;
   }
 }
 
 @media screen and (min-width: 768px){
   .bold-header{
     font-size: 1.8em;
+  }
+
+  .card{
+    width: 50%;
   }
 }
 
