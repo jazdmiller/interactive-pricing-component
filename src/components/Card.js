@@ -8,6 +8,14 @@ function Card() {
     const pageviews = ["10k", "50k", "100k", "500k", "1M"]
 
     const [sliderValue, setSliderValue] = useState(2)
+    const [isYearlyBilling, setIsYearlyBilling] = useState(false)
+
+    const calculatePrice = (basePrice, isYearlyBilling ) => {
+        if(isYearlyBilling) {
+            return basePrice * 12 * .75;
+        }
+        return basePrice;
+    }
   return (
     <div>
          <div className='card w-md-50 mx-auto'>
@@ -17,7 +25,7 @@ function Card() {
                         {pageviews[sliderValue]} PAGEVIEWS
                     </div>
                     <div className='col-md-6 order-3 order-md-2 text-center text-md-end col-margin'>
-                    <span id="price">${prices[sliderValue]}.00</span> / month
+                    <span id="price">${calculatePrice(prices[sliderValue], isYearlyBilling)}.00</span> /{isYearlyBilling ? 'year' : 'month'}
                     </div>
                 <div className='w-100 text-center col-12 order-2 order-md-3 col-margin'>
                     <input type="range" name="pageviews" id="pageviews" min={0} max={4} value={sliderValue} onChange={(e) => setSliderValue(Number(e.target.value))}/>
@@ -27,7 +35,7 @@ function Card() {
                 <div className='row billing-row justify-content-center' id="billing-row">
                     <div className='col-4 px-0 text-end'>Monthly billing</div>
                     <div className='col-4 px-2 text-center form-check form-switch'>
-                        <input className='form-check-input' type='checkbox' role='switch' id='flexSwitchCheckDefault'/>
+                        <input className='form-check-input' type='checkbox' role='switch' id='flexSwitchCheckDefault' checked={isYearlyBilling} onChange={() => setIsYearlyBilling(!isYearlyBilling)}/>
                     </div> 
                     <div className='col-4 px-0'>Yearly billing <span className='badge badge-pill bg-light'>-25%</span></div>
                 </div>
