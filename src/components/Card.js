@@ -1,10 +1,11 @@
 import React from 'react'
+import IconCheck from '../images/icon-check.svg'
 
 function Card() {
   return (
     <div>
          <div className='card w-md-50 mx-auto'>
-            <div className='card-body p-4'>
+            <div className='card-body p-4 px-5'>
                 <div className='row mb-3'>
                     <div className='col-md-6 order-sm-1 pt-md-4 text-center text-md-start col-margin' id='pageview-text'>
                         100k PAGEVIEWS
@@ -28,10 +29,10 @@ function Card() {
                 <div className='divider'></div>
 
                 <div className='row'>
-                    <div className='col-12 col-md-6 text-center text-md-start col-margin'>
-                        <div>Unlimited websites</div>
-                        <div>100% data ownership</div>
-                        <div>Email reports</div>
+                    <div className='col-12 col-md-6 text-center text-md-start col-margin' id="list-text">
+                        <div><span className='mx-2'><img className="check-icon" src={IconCheck} /></span> Unlimited websites</div>
+                        <div><span className='mx-2'><img className="check-icon" src={IconCheck} /></span> 100% data ownership</div>
+                        <div><span className='mx-2'><img className="check-icon" src={IconCheck} /></span> Email reports</div>
                     </div>
                     <div className='col-12 col-md-6 text-center text-md-end'>
                         <button>Start my trial</button>

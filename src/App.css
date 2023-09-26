@@ -89,6 +89,11 @@ html, body{
   margin-bottom: 8%;
 }
 
+.check-icon{
+  width: 5%;
+}
+
+
 
 /* ****** MEDIA QUERIES ******** */
 
@@ -122,6 +127,10 @@ html, body{
     font-size: .7em;
     margin-bottom: 10%;
   }
+
+  #list-text{
+    font-size: 1em;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -143,6 +152,9 @@ html, body{
     font-weight: 800;
   }
 
+  #list-text{
+    font-size: .8em;
+  }
   
 }
 
