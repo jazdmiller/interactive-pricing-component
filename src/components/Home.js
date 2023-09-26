@@ -16,7 +16,7 @@ function Home() {
                 </div>
             </div>
         </div>
-       <Card />
+       <Card className="card-div"/>
     </div>
   )
 }
