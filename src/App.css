@@ -86,13 +86,25 @@ html, body{
 .divider{
   border-bottom: 1px #ECF0FB solid;
   width: 100%;
-  margin-bottom: 8%;
+  margin-bottom: 10%;
 }
 
 .check-icon{
   width: 5%;
 }
 
+.start-btn button{
+  border: none;
+  background-color: #293356;
+  color: #BECDFF;
+  border-radius: 50px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+}
+
+.start-btn{
+  margin-bottom: 10%;
+}
 
 
 /* ****** MEDIA QUERIES ******** */
@@ -130,6 +142,7 @@ html, body{
 
   #list-text{
     font-size: 1em;
+    margin-bottom: 10%;
   }
 }
 
