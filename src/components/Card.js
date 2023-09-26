@@ -34,8 +34,8 @@ function Card() {
                         <div className='mb-2'><span className='mx-2'><img className="check-icon" src={IconCheck} /></span> 100% data ownership</div>
                         <div className='mb-2'><span className='mx-2'><img className="check-icon" src={IconCheck} /></span> Email reports</div>
                     </div>
-                    <div className='col-12 col-md-6 text-center text-md-end start-btn'>
-                        <button className='px-5 py-2'>Start my trial</button>
+                    <div className='col-12 col-md-6 text-center my-md-auto text-md-end start-btn'>
+                        <button className='px-5 px-md-4 px-lg-5 py-2 py-md-3'>Start my trial</button>
                     </div>
                 </div>
 
