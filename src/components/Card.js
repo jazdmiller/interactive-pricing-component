@@ -1,20 +1,26 @@
-import React from 'react'
+import React, { useState }from 'react'
 import IconCheck from '../images/icon-check.svg'
 
 function Card() {
+
+    const values = [0, 1, 2, 3, 4]
+    const prices = [8, 12, 16, 24, 36]
+    const pageviews = ["10k", "50k", "100k", "500k", "1M"]
+
+    const [sliderValue, setSliderValue] = useState(2)
   return (
     <div>
          <div className='card w-md-50 mx-auto'>
             <div className='card-body p-4'>
                 <div className='row mb-3'>
                     <div className='col-md-6 order-sm-1 pt-md-4 text-center text-md-start col-margin' id='pageview-text'>
-                        100k PAGEVIEWS
+                        {pageviews[sliderValue]} PAGEVIEWS
                     </div>
                     <div className='col-md-6 order-3 order-md-2 text-center text-md-end col-margin'>
                     <span id="price">$16.00</span> / month
                     </div>
                 <div className='w-100 text-center col-12 order-2 order-md-3 col-margin'>
-                    <input type="range" name="pageviews" id="pageviews" />
+                    <input type="range" name="pageviews" id="pageviews" min={0} max={4} value={sliderValue} onChange={(e) => setSliderValue(Number(e.target.value))}/>
                 </div>
                 </div>
 
