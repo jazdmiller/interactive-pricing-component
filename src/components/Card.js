@@ -17,7 +17,7 @@ function Card() {
                         {pageviews[sliderValue]} PAGEVIEWS
                     </div>
                     <div className='col-md-6 order-3 order-md-2 text-center text-md-end col-margin'>
-                    <span id="price">$16.00</span> / month
+                    <span id="price">${prices[sliderValue]}.00</span> / month
                     </div>
                 <div className='w-100 text-center col-12 order-2 order-md-3 col-margin'>
                     <input type="range" name="pageviews" id="pageviews" min={0} max={4} value={sliderValue} onChange={(e) => setSliderValue(Number(e.target.value))}/>
