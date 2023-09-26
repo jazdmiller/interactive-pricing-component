@@ -83,6 +83,11 @@ html, body{
   width: auto;
 }
 
+.divider{
+  border-bottom: 1px #ECF0FB solid;
+  width: 100%;
+  margin-bottom: 8%;
+}
 
 
 /* ****** MEDIA QUERIES ******** */
@@ -115,6 +120,7 @@ html, body{
 
   #billing-row{
     font-size: .7em;
+    margin-bottom: 10%;
   }
 }
 
@@ -124,7 +130,7 @@ html, body{
   }
 
   .card{
-    width: 50%;
+    width: 40%;
     font-size: 1.2em;
   }
 
