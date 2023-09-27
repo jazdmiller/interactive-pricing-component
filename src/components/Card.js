@@ -16,6 +16,13 @@ function Card() {
         }
         return basePrice;
     }
+
+    const handleSliderChange = (e) => {
+        const value = Number(e.target.value)
+        const percentage = (value/4) * 100
+        e.target.style.backgroundSize = `${percentage}% 100%`
+        setSliderValue(value)
+    }
   return (
     <div>
          <div className='card w-md-50 mx-auto'>
@@ -27,9 +34,13 @@ function Card() {
                     <div className='col-md-6 order-3 order-md-2 text-center text-md-end col-margin'>
                     <span id="price">${calculatePrice(prices[sliderValue], isYearlyBilling)}.00</span> /{isYearlyBilling ? 'year' : 'month'}
                     </div>
+
+                {/* ********* SLIDER ********** */}
                 <div className='w-100 text-center col-12 order-2 order-md-3 col-margin'>
-                    <input type="range" name="pageviews" id="pageviews" min={0} max={4} value={sliderValue} onChange={(e) => setSliderValue(Number(e.target.value))}/>
+                    <input className="custom-slider" type="range" name="pageviews" id="pageviews" min={0} max={4} value={sliderValue} onChange={handleSliderChange}/>
                 </div>
+                {/* ********* SLIDER END ********** */}
+
                 </div>
 
                 <div className='row billing-row justify-content-center' id="billing-row">
