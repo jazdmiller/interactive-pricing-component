@@ -59,7 +59,7 @@ function Card() {
                     <div className='col-4 px-2 text-center form-check form-switch'>
                         <input className='form-check-input' type='checkbox' role='switch' id='flexSwitchCheckDefault' checked={isYearlyBilling} onChange={() => setIsYearlyBilling(!isYearlyBilling)}/>
                     </div> 
-                    <div className='col-4 px-0'>Yearly billing <span className='badge badge-pill bg-light'>-25%</span></div>
+                    <div className='col-4 px-0'>Yearly billing <span className='badge badge-pill bg-light'>-25% <span className='d-none d-lg-inline-block'>discount</span></span></div>
                 </div>
 
                 <div className='divider'></div>
