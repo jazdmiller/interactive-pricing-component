@@ -1,4 +1,4 @@
-import React, { useState }from 'react'
+import React, { useState, useEffect }from 'react'
 import IconCheck from '../images/icon-check.svg'
 
 function Card() {
@@ -19,10 +19,20 @@ function Card() {
 
     const handleSliderChange = (e) => {
         const value = Number(e.target.value)
-        const percentage = (value/4) * 100
-        e.target.style.backgroundSize = `${percentage}% 100%`
+        // const percentage = (value/4) * 100
+        // e.target.style.backgroundSize = `${percentage}% 100%`
         setSliderValue(value)
     }
+
+    useEffect(() => {
+        const slider = document.querySelector('#pageviews')
+        const max = slider.max;
+        const current = slider.value
+        const percentage = (current / max) * 100
+
+        slider.style.background = `linear-gradient(90deg, #A4F3EB ${percentage}%, #ECF0FB ${percentage}%)`
+    }, [sliderValue])
+
   return (
     <div>
          <div className='card w-md-50 mx-auto'>
