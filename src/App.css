@@ -195,12 +195,13 @@ input[type="range"]{
       appearance: none;
       height: 25px;
       cursor: pointer;
-      background-color: #80FFF3;
+      background-color: #10D8C4;
       /* background-image: url('./images/icon-slider.svg'); */
       /* background-size: cover; */
       border-radius: 50% ;
       /* position:relative; */
       /* box-shadow: -2000px 0 0 1000px  #ECF0FB; */
+      box-shadow: 0 10px 10px 4px rgba(128, 255, 243, 0.75); 
       margin-top: -8px;
       z-index: 555;
     }
