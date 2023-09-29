@@ -16,6 +16,7 @@ function Card() {
         }
         return basePrice;
     }
+    
 
     const handleSliderChange = (e) => {
         const value = Number(e.target.value)
