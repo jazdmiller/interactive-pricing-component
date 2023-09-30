@@ -1,7 +1,7 @@
 # Frontend Mentor - Interactive pricing component solution
 
 
-![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Interactive pricing component coding challenge](./src/images/interactive-pricing-preview.jpeg)
 
 This is a solution to the [Interactive pricing component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-pricing-component-t0m8PIyY8).
 ## Table of contents
