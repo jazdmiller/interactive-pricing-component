@@ -211,8 +211,12 @@ input[type="range"]{
 
     input[type='range']::-webkit-slider-thumb:hover{
       background-color: #24AEA1;
+      transition: background-color .2s;
     }
 
+    .form-check-input{
+      cursor: pointer;
+    }
     .form-check-input:checked{
       background-color: #7AEADF;
       border: none;
@@ -275,6 +279,7 @@ input[type="range"]{
   }
   .start-btn button:hover{
     color: white;
+    transition: color .2s;
   }
 }
 
