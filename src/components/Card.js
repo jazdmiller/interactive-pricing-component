@@ -20,8 +20,6 @@ function Card() {
 
     const handleSliderChange = (e) => {
         const value = Number(e.target.value)
-        // const percentage = (value/4) * 100
-        // e.target.style.backgroundSize = `${percentage}% 100%`
         setSliderValue(value)
     }
 
