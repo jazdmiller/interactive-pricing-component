@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive pricing component solution
+# Interactive Pricing Component
 
 
 ![Design preview for the Interactive pricing component coding challenge](./src/images/interactive-pricing-preview.jpeg)
